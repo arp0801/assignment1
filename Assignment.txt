@@ -1,0 +1,57 @@
+What Is Git?
+
+
+Git is a popular open-source version control system(VCS) among developers. Originally, it was designed for collaborative projects between developers. Git is mostly used to store content and code in repositories.
+
+The system also provides an environment where the code can be changed, with the revisions saved for future use. The repositories are stored in a remote server but are locally saved in every team member’s computers.
+
+Git can be accessed and managed using command line tools. But if you’re new to Git, then you might want to start with something more manageable.
+
+Graphical User Interface (GUI) clients are tools that provide alternative visualization for Git.
+
+
+
+GUI Clients
+
+1-Github Desktop 
+ 	for windows and mac
+	tracking changes are easier
+	most of git operations can be performed from the UI
+	
+2-Source Tree
+	for windows and mac
+	highly advance than Github
+	great support for repositories hosted by BitBucket and gitHub
+
+3-GitKaren
+	for linux mac and windows
+	in built code editor
+	helps to kick start the project with drag and drop functionality
+
+4-GitCola
+	mac windows ubuntu and linux 
+	written in python
+	simple and easy but very powerful
+
+5-GitForce
+	linux windows ubuntu
+	easy graphical front end
+	.NET 3.5 and C#	
+
+
+
+git push -u origin master
+
+git push: pushes local changes to upstream repositrories
+
+-u: adds a tracking reference to the upstream that we are 	pushing to
+
+origin: name of the remote repository where we want to publish
+		our commits. By deafult the name is ORIGIN
+
+master:  referred as main branch or the final view of a	 			repository
+
+
+git can set a particular branch in a remote repository to be the default "upstream" branch for that particular branch. For example, if you clone an existing repository, git will, by default, associate your master branch with the master branch in the origin repository, i.e. the one you're cloning from. This means that git can provide helpful defaults, such as being able to just use git pull while on master rather than having to specify a repository and a branch to fetch and merge from. It's also this association that lets git produce its helpful "Your branch is ahead of origin/master by 10 commits" messages...
+
+However, if you haven't cloned from an exisiting repository, but you're wanting to set up a new origin remote that represents your newly created GitHub repository, you have to manually tell git to associate your master with master in the new origin repository. The -u to git push means "as well as pushing, associate my master branch with the one I'm pushing to". You only need to do this once for that association to be recorded in .git/config.
